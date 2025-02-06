@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.decorator.HelloController">
+<children>
+   <CheckBox fx:id="garlandCheckBox" layoutX="143.0" layoutY="560.0" mnemonicParsing="false" onAction="#addLights" text="Гирлянда" />
+   <CheckBox fx:id="starCheckBox" layoutX="317.0" layoutY="560.0" mnemonicParsing="false" onAction="#StarOnAction" text="Звезда" />
+   <CheckBox fx:id="presentCheckBox" layoutX="230.0" layoutY="560.0" mnemonicParsing="false" onAction="#presentCheckBoxOnAction" text="Подарки" />
+   <Pane fx:id="drawPaneLights" prefHeight="538.0" prefWidth="417.0">
+      <children>
+         <!-- Панель для елки -->
+         <Pane fx:id="drawPaneTree" layoutX="14.0" layoutY="14.0" prefHeight="538.0" prefWidth="417.0" style="-fx-background-color: #d6d0f3;" />
+         <!-- Панель для гирлянды -->
+         <Pane fx:id="drawPaneGarland" layoutX="14.0" layoutY="14.0" prefHeight="538.0" prefWidth="417.0" />
+         <!-- Панель для подарков-->
+         <Pane fx:id="drawPanePrezent" layoutX="14.0" layoutY="14.0" prefHeight="538.0" prefWidth="417.0" />
+         <!-- Панель для звезды-->
+         <Pane fx:id="drawPaneStar" layoutX="14.0" layoutY="14.0" prefHeight="538.0" prefWidth="417.0" />
+      </children>
+   </Pane>
+   <Button fx:id="allDoneButton" onAction="#allDoneButtonOnAction" layoutX="114.0" layoutY="584.0" mnemonicParsing="false" text="Добавить все" />
+   <Button fx:id="allDeleteButton" onAction="#allDeleteButtonOnAction" layoutX="227.0" layoutY="584.0" mnemonicParsing="false" text="Убрать все" />
+   <CheckBox fx:id="TreeCheckBox" layoutX="67.0" layoutY="560.0" mnemonicParsing="false" onAction="#TreeOnAction" text="Ёлка" />
+
+</children>
+</Pane>
